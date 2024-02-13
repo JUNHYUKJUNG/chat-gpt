@@ -11,8 +11,8 @@ const ChatView = ({ chatList }) => {
   // 채팅을 입력하면 스크롤이 맨 아래로 내려가도록 설정 시킨다.
 
   return (
-    <div className="h-screen max-w-[560px] flex flex-col justify-end text-center">
-      <ul ref={ulRef} className="mb-24 overflow-y-auto">
+    <div className="h-screen max-w-[560px] flex flex-col justify-end">
+      <ul ref={ulRef} className="mb-24 overflow-y-auto text-center">
         {chatList.length === 0
           ? "채팅이 없습니다."
           : chatList.map((v, i) => (
